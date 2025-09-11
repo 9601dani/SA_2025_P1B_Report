@@ -14,7 +14,7 @@ INSERT INTO movements (
     'Venta de Pizza Margarita',
     90.00,
     '123e4567-e89b-12d3-a456-426614174002',
-    'Sucursal Central',
+    'Sucursal Sur',
     '2025-09-10T10:00:00'
 );
 
