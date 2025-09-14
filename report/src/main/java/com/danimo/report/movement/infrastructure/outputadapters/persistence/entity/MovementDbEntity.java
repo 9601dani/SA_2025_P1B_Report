@@ -20,6 +20,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class MovementDbEntity {
     @Id
+    @Column(columnDefinition = "CHAR(36)")
     private UUID id;
 
     @Enumerated(EnumType.STRING)
@@ -36,7 +37,7 @@ public class MovementDbEntity {
     @Column(nullable = false, precision = 12, scale = 2)
     private BigDecimal amount;
 
-    @Column(nullable = false)
+    @Column(columnDefinition = "CHAR(36)", nullable = false)
     private UUID locationId;
 
     @Column(nullable = false, length = 150)
